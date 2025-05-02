@@ -12,7 +12,7 @@ for (var _i = 0; _i <= i_alarma; _i++)
 	if !(objetos_a_cargar[_i].cargado)
 		_cargado = "not ok"
 	
-	draw_text(0,32+(32*_i),$"{objetos_a_cargar[_i].objecto}: {_cargado}");
+	draw_text(0,32+(32*_i),$"{object_get_name(objetos_a_cargar[_i].objecto)}: {_cargado}");
 }
 
 draw_set_color(_color);
