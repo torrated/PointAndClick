@@ -2,7 +2,8 @@
 
 try {
 
-draw_self()
+draw_self();
+
 if (obj_settings.debug)
 {
 	var _halign = draw_get_halign();
