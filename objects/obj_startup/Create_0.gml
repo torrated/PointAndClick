@@ -10,7 +10,7 @@ objetos_a_cargar = [
 ];
 carga_correcta = true;
 
-tiempo_alarma = 60;
+tiempo_alarma = 15;
 alarm[0] = tiempo_alarma;
 i_alarma = 0;
 
