@@ -3,7 +3,23 @@
 try {
 
 if (interaccion)
-	room_goto(destino);
+{
+	if !(abierta)
+	{
+		if !(bloqueada)
+			abierta = true;
+		else
+			show_message("esta puerta está bloqueada");
+		interaccion = false;
+	}
+	else
+	{
+		if (obj_settings.debug)
+			room_goto(room_debug);
+		else
+			room_goto(destino);
+	}
+}
 
 }
 catch (_exception){
