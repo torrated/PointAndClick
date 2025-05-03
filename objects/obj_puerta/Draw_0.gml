@@ -18,7 +18,7 @@ if (obj_settings.debug)
 	if !(bloqueada)
 		_bloqueada = "no bloqueada";
 		
-	draw_text(x,y,$"{_abierta}\n{_bloqueada}");
+	draw_text(x,y+24,$"{_abierta}\n{_bloqueada}");
 	
 	draw_set_halign(_haligh);
 	draw_set_color(_color);
