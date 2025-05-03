@@ -4,6 +4,7 @@ try {
 
 sprite_idle = spr_player_idle;
 sprite_caminando = spr_player_caminando;
+sprite_tocar = spr_player_toca;
 
 velocidad = 6;
 destino = noone;
