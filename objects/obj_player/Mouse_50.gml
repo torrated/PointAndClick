@@ -15,6 +15,7 @@ if (fnc_raton_en_pantalla())
 	
 	if (x < destino.x)
 		direction = 0;
+
 	if (x > destino.x)
 		direction = 180;
 }

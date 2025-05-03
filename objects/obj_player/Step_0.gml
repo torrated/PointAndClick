@@ -10,8 +10,11 @@ if (speed > 0)
 	else
 		image_xscale = -1;
 }
-else
+else if (sprite_index == sprite_caminando)
+{
 	sprite_index = sprite_idle;
+	image_index = 0;
+}
 
 }
 catch (_exception){

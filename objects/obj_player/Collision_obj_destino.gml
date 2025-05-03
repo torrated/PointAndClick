@@ -6,6 +6,8 @@ try {
 speed = 0;
 if (objeto <> noone)
 {
+	image_index = 0;
+	sprite_index = sprite_tocar;
 	objeto.interaccion = true;
 	objeto = noone;
 }
