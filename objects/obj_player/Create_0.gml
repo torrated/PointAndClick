@@ -2,10 +2,10 @@
 
 try {
 
-sprite_idle = spr_player;
-sprite_caminando = spr_player;
+sprite_idle = spr_player_idle;
+sprite_caminando = spr_player_caminando;
 
-velocidad = 4;
+velocidad = 6;
 destino = noone;
 objeto = noone;
 
