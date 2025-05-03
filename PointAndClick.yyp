@@ -44,6 +44,7 @@
     {"id":{"name":"room_debug","path":"rooms/room_debug/room_debug.yy",},},
     {"id":{"name":"room_startup","path":"rooms/room_startup/room_startup.yy",},},
     {"id":{"name":"Funciones","path":"scripts/Funciones/Funciones.yy",},},
+    {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},},
     {"id":{"name":"spr_destino","path":"sprites/spr_destino/spr_destino.yy",},},
     {"id":{"name":"spr_interaccionable","path":"sprites/spr_interaccionable/spr_interaccionable.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
