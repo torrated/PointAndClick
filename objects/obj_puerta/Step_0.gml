@@ -2,6 +2,11 @@
 
 try {
 
+if (abierta)
+	sprite_index = sprite_abierta;
+else
+	sprite_index = sprite_cerrada;
+
 if (interaccion)
 {
 	if !(abierta)
