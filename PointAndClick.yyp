@@ -46,6 +46,7 @@
     {"id":{"name":"Funciones","path":"scripts/Funciones/Funciones.yy",},},
     {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},},
     {"id":{"name":"spr_destino","path":"sprites/spr_destino/spr_destino.yy",},},
+    {"id":{"name":"spr_fondo_debug","path":"sprites/spr_fondo_debug/spr_fondo_debug.yy",},},
     {"id":{"name":"spr_interaccionable","path":"sprites/spr_interaccionable/spr_interaccionable.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_puerta","path":"sprites/spr_puerta/spr_puerta.yy",},},
