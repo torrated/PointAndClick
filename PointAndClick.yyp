@@ -55,6 +55,7 @@
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_puerta","path":"sprites/spr_puerta/spr_puerta.yy",},},
     {"id":{"name":"spr_sombra","path":"sprites/spr_sombra/spr_sombra.yy",},},
+    {"id":{"name":"Sprite11","path":"sprites/Sprite11/Sprite11.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
