@@ -6,10 +6,9 @@ try {
 speed = 0;
 if (objeto <> noone)
 {
-	image_index = 0;
 	sprite_index = sprite_tocar;
-	objeto.interaccion = true;
-	objeto = noone;
+	image_index = 0;
+	alarm[0] = 1;
 }
 instance_destroy(other,true);
 
