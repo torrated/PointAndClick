@@ -11,8 +11,8 @@ if (obj_settings.debug)
 }
 
 draw_self();
-if (interaccion)
-	draw_sprite(Sprite11,0,x,y-100)
+//if (interaccion)
+//	draw_sprite(Sprite11,0,x,y-100)
 
 }
 catch (_exception){
