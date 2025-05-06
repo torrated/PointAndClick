@@ -34,6 +34,7 @@
   },
   "name":"PointAndClick",
   "resources":[
+    {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"Notas generales","path":"notes/Notas generales/Notas generales.yy",},},
     {"id":{"name":"obj_destino","path":"objects/obj_destino/obj_destino.yy",},},
     {"id":{"name":"obj_interaccionable","path":"objects/obj_interaccionable/obj_interaccionable.yy",},},
