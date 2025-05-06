@@ -14,7 +14,10 @@ if (interaccion)
 		if !(bloqueada)
 			abierta = true;
 		else
-			show_message("esta puerta está bloqueada");
+		{
+			var _texto = instance_create_layer(0,0,"Texto",obj_texto);
+			_texto.texto[0] = "La puerta está bloqueada";
+		}
 		interaccion = false;
 	}
 	else

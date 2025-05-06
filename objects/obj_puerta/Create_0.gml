@@ -5,7 +5,7 @@ try {
 
 destino = noone;
 abierta = false;
-bloqueada = false;
+bloqueada = true;
 
 sprite_cerrada = spr_puerta;
 sprite_abierta = spr_puerta;
