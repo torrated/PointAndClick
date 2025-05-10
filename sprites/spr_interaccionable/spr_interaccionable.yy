@@ -19,14 +19,14 @@
   "height":32,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"08fa7316-bb29-42bf-bbdc-9cb11d266a90","blendMode":0,"displayName":"default","isLocked":false,"name":"08fa7316-bb29-42bf-bbdc-9cb11d266a90","opacity":50.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"08fa7316-bb29-42bf-bbdc-9cb11d266a90","blendMode":0,"displayName":"default","isLocked":false,"name":"08fa7316-bb29-42bf-bbdc-9cb11d266a90","opacity":48.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_interaccionable",
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Debug",
+    "path":"folders/Sprites/Debug.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
