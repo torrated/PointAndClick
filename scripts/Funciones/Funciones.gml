@@ -25,15 +25,20 @@ try{
 	yy = argument[1];  
   
 	//Outline  
-	draw_set_color(argument[2]);  
-	draw_text(xx+1, yy+1, argument[4]);  
-	draw_text(xx-1, yy-1, argument[4]);  
-	draw_text(xx,   yy+1, argument[4]);  
-	draw_text(xx+1,   yy, argument[4]);  
-	draw_text(xx,   yy-1, argument[4]);  
-	draw_text(xx-1,   yy, argument[4]);  
-	draw_text(xx-1, yy+1, argument[4]);  
-	draw_text(xx+1, yy-1, argument[4]);  
+	var _i = 1;
+	repeat(3)
+	{
+		draw_set_color(argument[2]);  
+		draw_text(xx+_i, yy+_i, argument[4]);  
+		draw_text(xx-_i, yy-_i, argument[4]);  
+		draw_text(xx,   yy+_i, argument[4]);  
+		draw_text(xx+_i,   yy, argument[4]);  
+		draw_text(xx,   yy-_i, argument[4]);  
+		draw_text(xx-_i,   yy, argument[4]);  
+		draw_text(xx-_i, yy+_i, argument[4]);  
+		draw_text(xx+_i, yy-_i, argument[4]);
+		_i += 1;
+	}
   
 	//Text  
 	draw_set_color(argument[3]);  
