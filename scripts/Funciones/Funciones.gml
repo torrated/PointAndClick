@@ -66,7 +66,7 @@ try{
 
 	//Outline  
 	var _i = 1;
-	repeat(1)
+	repeat(3)
 	{ 
 		draw_sprite_ext(sprite,0,xx+_i, yy+_i,xscale,yscale,0,c_white,alpha);
 		draw_sprite_ext(sprite,0,xx-_i, yy-_i,xscale,yscale,0,c_white,alpha); 
