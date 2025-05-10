@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_destino",
+  "%Name":"obj_lampara_pie",
   "eventList":[],
   "managed":true,
-  "name":"obj_destino",
+  "name":"obj_lampara_pie",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Despacho",
+    "path":"folders/Objects/Despacho.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_interaccionable",
+    "path":"objects/obj_interaccionable/obj_interaccionable.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_destino",
-    "path":"sprites/spr_destino/spr_destino.yy",
+    "name":"spr_despacho_lampara_pie",
+    "path":"sprites/spr_despacho_lampara_pie/spr_despacho_lampara_pie.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

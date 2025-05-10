@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_destino",
+  "%Name":"obj_mesa",
   "eventList":[],
   "managed":true,
-  "name":"obj_destino",
+  "name":"obj_mesa",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Despacho",
+    "path":"folders/Objects/Despacho.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_interaccionable",
+    "path":"objects/obj_interaccionable/obj_interaccionable.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_destino",
-    "path":"sprites/spr_destino/spr_destino.yy",
+    "name":"spr_despacho_mesa",
+    "path":"sprites/spr_despacho_mesa/spr_despacho_mesa.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
