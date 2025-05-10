@@ -50,3 +50,41 @@ try{
 catch (_exception){
 	show_message("Error en fnc_texto_dialogo: "+_exception.longMessage);}
 }
+
+
+/// @function                fnc_resaltar()
+/// @description             Crea un outline blanco de un sprite
+function fnc_resaltar(x, y, sprite, xscale, yscale, alpha)
+{
+try{
+
+	xx = argument[0];  
+	yy = argument[1];
+
+	//activa el shader
+	shader_set(shader_blanco);
+
+	//Outline  
+	var _i = 1;
+	repeat(1)
+	{ 
+		draw_sprite_ext(sprite,0,xx+_i, yy+_i,xscale,yscale,0,c_white,alpha);
+		draw_sprite_ext(sprite,0,xx-_i, yy-_i,xscale,yscale,0,c_white,alpha); 
+		draw_sprite_ext(sprite,0,xx,   yy+_i,xscale,yscale,0,c_white,alpha); 
+		draw_sprite_ext(sprite,0,xx+_i,   yy,xscale,yscale,0,c_white,alpha);
+		draw_sprite_ext(sprite,0,xx,   yy-_i,xscale,yscale,0,c_white,alpha);
+		draw_sprite_ext(sprite,0,xx-_i,   yy,xscale,yscale,0,c_white,alpha);
+		draw_sprite_ext(sprite,0,xx-_i, yy+_i,xscale,yscale,0,c_white,alpha);
+		draw_sprite_ext(sprite,0,xx+_i, yy-_i,xscale,yscale,0,c_white,alpha);
+		_i += 1;
+	}
+
+	shader_reset();
+
+	//sprite normal  
+	draw_sprite_ext(sprite,0,xx, yy,xscale,yscale,0,c_white,alpha);  
+}
+catch (_exception){
+	show_message("Error en fnc_resaltar: "+_exception.longMessage);}
+}
+

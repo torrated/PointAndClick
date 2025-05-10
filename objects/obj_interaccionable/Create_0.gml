@@ -3,6 +3,7 @@
 try {
 
 interaccion = false;
+outline = false;
 
 }
 catch (_exception){

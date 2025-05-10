@@ -10,9 +10,10 @@ if (obj_settings.debug)
 	draw_set_halign(_halign);
 }
 
-draw_self();
-//if (interaccion)
-//	draw_sprite(Sprite11,0,x,y-100)
+if (outline)
+	fnc_resaltar(x,y,sprite_index,image_xscale,image_yscale,image_alpha);
+else
+	draw_self();
 
 }
 catch (_exception){
