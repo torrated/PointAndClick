@@ -19,7 +19,7 @@ else
 		if (obj_settings.debug)
 			room_goto(room_debug)
 		else
-			room_goto("room 1");
+			room_goto(room_despacho);
 }
 
 }

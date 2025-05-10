@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"spr_fondo_despacho_1",
+  "%Name":"spr_despacho_fondo",
   "bboxMode":0,
   "bbox_bottom":1079,
   "bbox_left":0,
@@ -21,19 +21,19 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"5a167f9a-d59c-4d55-8af3-4175a884fc8d","blendMode":0,"displayName":"default","isLocked":false,"name":"5a167f9a-d59c-4d55-8af3-4175a884fc8d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_fondo_despacho_1",
+  "name":"spr_despacho_fondo",
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Fondos",
-    "path":"folders/Sprites/Fondos.yy",
+    "name":"Despacho",
+    "path":"folders/Sprites/Despacho.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"spr_fondo_despacho_1",
+    "%Name":"spr_despacho_fondo",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_fondo_despacho_1",
+    "name":"spr_despacho_fondo",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,7 +69,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"565a46c9-db39-49d8-b5ce-fd03e19da11c","path":"sprites/spr_fondo_despacho_1/spr_fondo_despacho_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"565a46c9-db39-49d8-b5ce-fd03e19da11c","path":"sprites/spr_despacho_fondo/spr_despacho_fondo.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"02ced516-52d4-4982-a674-ec668b21088f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
