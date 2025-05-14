@@ -14,6 +14,7 @@ if (mostrar)
 		offset_y = 3;
 	
 	image_alpha = 1.0;
+	seleccionado = true;
 }
 
 }

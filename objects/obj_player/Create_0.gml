@@ -13,6 +13,10 @@ objeto = noone;
 sombra = instance_create_layer(x,y,layer,obj_sombra);
 sombra.follow = self;
 
+proxima_accion = noone;
+//x_accion = 0;
+//y_accion = 0;
+
 }
 catch (_exception){
 	show_message("Error en obj_player.create: "+_exception.longMessage);}

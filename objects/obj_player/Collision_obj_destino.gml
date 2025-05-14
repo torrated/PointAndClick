@@ -2,9 +2,9 @@
 
 try {
 
-
 speed = 0;
-if (objeto <> noone)
+
+if (proxima_accion <> noone)
 {
 	sprite_index = sprite_tocar;
 	image_index = 0;

@@ -14,6 +14,16 @@ bottom_right = noone;
 bottom_left = noone;
 top_left = noone;
 
+enum ACCIONES_PLAYER {
+	HABLAR,
+	VER,
+	USAR,
+	COGER
+}
+
+accion = noone;
+seleccionado = false;
+
 }
 catch (_exception){
 	show_message("Error en obj_ui.Create: "+_exception.longMessage);}

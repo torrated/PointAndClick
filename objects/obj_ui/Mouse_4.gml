@@ -4,8 +4,12 @@ try {
 
 if (mostrar)
 {
-	if !(seleccionado)
-		instance_destroy(self,true);
+	if (seleccionado)
+	{
+		obj_player.proxima_accion = accion;
+	}
+	
+	instance_destroy(self,true);
 }
 
 }

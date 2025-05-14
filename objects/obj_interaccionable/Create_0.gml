@@ -4,6 +4,7 @@ try {
 
 interaccion = false;
 outline = false;
+acciones = [];
 
 }
 catch (_exception){
