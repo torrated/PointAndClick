@@ -4,8 +4,22 @@ try {
 
 if (obj_settings.debug)
 {
-	//if (instance_exists(obj_player))
-		//fnc_texto_dialogo(obj_player.x,obj_player.y-obj_player.sprite_height,c_black,c_white,"Mi nombre es Stilton");
+	with (obj_player)
+	{
+		//draw_text(x,y,$"accion:{proxima_accion}");
+		//draw_text(x,y+20,$"objeto:{objeto}");
+	}
+	
+	with(obj_interaccionable)
+	{
+		//draw_text(x,y,$"interaccion:{interaccion}");
+		//draw_text(x,y-30,$"acciones:{acciones}");
+	}
+	
+	with(obj_ui)
+	{
+		//draw_text(0,0,$"{x},{y}");
+	}
 }
 
 }

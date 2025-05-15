@@ -88,3 +88,19 @@ catch (_exception){
 	show_message("Error en fnc_resaltar: "+_exception.longMessage);}
 }
 
+
+
+/// @function                fnc_personaje_dice()
+/// @description             Crea un mensaje sobre un personaje
+function fnc_personaje_dice(personaje,texto)
+{
+try{
+
+	var _bocadillo = instance_create_layer(personaje.x,personaje.y-personaje.sprite_height,"Texto",obj_bocadillo);
+	_bocadillo.texto[0] = texto;
+	
+}
+catch (_exception){
+	show_message("Error en fnc_personaje_dice: "+_exception.longMessage);}
+}
+

@@ -6,8 +6,8 @@
   "name":"obj_oficina_ventana",
   "overriddenProperties":[],
   "parent":{
-    "name":"Oficina",
-    "path":"folders/Objects/Oficina.yy",
+    "name":"Oficinas",
+    "path":"folders/Objects/Oficinas.yy",
   },
   "parentObjectId":{
     "name":"obj_interaccionable",

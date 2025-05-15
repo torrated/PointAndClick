@@ -4,10 +4,10 @@ try {
 
 if (obj_settings.debug)
 {
-	var _halign = draw_get_halign();
-	draw_set_halign(fa_center)
-	draw_text(x,y,$"interaccion:{interaccion}");
-	draw_set_halign(_halign);
+	//var _halign = draw_get_halign();
+	//draw_set_halign(fa_center)
+	//draw_text(x,y,$"interaccion:{interaccion}");
+	//draw_set_halign(_halign);
 }
 
 if (outline)

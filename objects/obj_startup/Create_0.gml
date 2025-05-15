@@ -10,6 +10,10 @@ objetos_a_cargar = [
 	{
 		objecto: obj_debug,
 		cargado: false
+	},
+	{
+		objecto: obj_ui,
+		cargado: false
 	}
 ];
 carga_correcta = true;

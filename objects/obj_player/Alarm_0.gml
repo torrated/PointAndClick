@@ -3,13 +3,18 @@
 try {
 
 if (objeto <> noone)
-	if (image_index >= image_number/2)
 	{
-		objeto.interaccion = !objeto.interaccion;
+		if !(array_contains(objeto.acciones,proxima_accion))
+			fnc_personaje_dice(obj_player,"No puedo hacer eso");
+		else
+		{
+			objeto.interaccion = true;
+			objeto.accion = proxima_accion;
+		}
+			
 		objeto = noone;
+		proxima_accion = noone;
 	}
-	else
-		alarm[0] = 1;
 
 }
 catch (_exception){
