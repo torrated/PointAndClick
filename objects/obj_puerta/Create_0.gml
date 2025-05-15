@@ -10,7 +10,8 @@ bloqueada = true;
 sprite_cerrada = spr_puerta;
 sprite_abierta = spr_puerta;
 
-acciones = [ACCIONES_PLAYER.USAR]
+//array_insert(acciones,-1,ACCIONES_PLAYER.USAR);
+
 }
 catch (_exception){
 	show_message("Error en obj_puerta.create: "+_exception.longMessage);}
