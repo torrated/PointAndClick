@@ -6,14 +6,14 @@ if (obj_settings.debug)
 {
 	with (obj_player)
 	{
-		draw_text(x,y,$"accion:{proxima_accion}");
+		//draw_text(x,y,$"accion:{proxima_accion}");
 		//draw_text(x,y+20,$"objeto:{objeto}");
 	}
 	
 	with(obj_interaccionable)
 	{
-		draw_text(x,y,$"interaccion:{interaccion}");
-		draw_text(x,y-30,$"acciones:{acciones}");
+		//draw_text(x,y,$"interaccion:{interaccion}");
+		//draw_text(x,y-30,$"acciones:{acciones}");
 	}
 	
 	with(obj_ui)

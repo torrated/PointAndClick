@@ -4,18 +4,7 @@ try {
 
 if (interaccion)
 {
-	var _bocadillo = noone;
-	switch(accion)
-	{
-		case ACCIONES_PLAYER.VER:	fnc_personaje_dice(personaje,"mirar");
-									break;
-		case ACCIONES_PLAYER.USAR:	fnc_personaje_dice(personaje,"usar");
-									break;
-		case ACCIONES_PLAYER.COGER:	fnc_personaje_dice(personaje,"coger");
-									break;
-		case ACCIONES_PLAYER.HABLAR:fnc_personaje_dice(personaje,"hablar");
-									break;
-	}
+	fnc_personaje_dice(personaje,textos[accion]);
 	interaccion = false;
 	accion = noone;
 }
