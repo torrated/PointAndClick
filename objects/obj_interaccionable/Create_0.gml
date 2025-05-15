@@ -4,7 +4,9 @@ try {
 
 interaccion = false;
 outline = false;
-acciones = [];
+accion = noone;
+acciones = [ACCIONES_PLAYER.VER];
+personaje = obj_player;
 
 }
 catch (_exception){
