@@ -15,8 +15,10 @@ if (fnc_raton_en_pantalla())
 		
 		if (proxima_accion == noone)
 		{
-			objeto = instance_position(mouse_x,mouse_y,obj_interaccionable);
+			objeto = instance_position(mouse_x,mouse_y,[obj_interaccionable,obj_salir_zona]);
 			destino = instance_create_layer(mouse_x,y,layer,obj_destino);
+            if (instance_exists(objeto) && objeto.object_index == obj_salir_zona)
+                proxima_accion = ACCIONES_PLAYER.SALIR;
 		}
 		else
 		{

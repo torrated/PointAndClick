@@ -18,7 +18,8 @@ enum ACCIONES_PLAYER {
 	HABLAR,
 	VER,
 	USAR,
-	COGER
+	COGER,
+	SALIR
 }
 
 accion = noone;
