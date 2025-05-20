@@ -7,6 +7,11 @@ outline = false;
 accion = noone;
 acciones = [ACCIONES_PLAYER.COGER,ACCIONES_PLAYER.HABLAR,ACCIONES_PLAYER.USAR,ACCIONES_PLAYER.VER];
 personaje = obj_player;
+    
+    se_puede_coger = false;
+    se_puede_hablar = false;
+    se_puede_usar = false;
+    se_puede_usar_desde_inventario = false;
 
 textos[ACCIONES_PLAYER.COGER] = "texto genérico para coger";
 textos[ACCIONES_PLAYER.HABLAR] = "texto genérico para hablar";
