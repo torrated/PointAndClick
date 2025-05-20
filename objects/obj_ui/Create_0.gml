@@ -19,7 +19,8 @@ enum ACCIONES_PLAYER {
 	VER,
 	USAR,
 	COGER,
-	SALIR
+	SALIR,
+    USAR_DESDE_INVENTARIO
 }
 
 accion = noone;

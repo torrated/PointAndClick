@@ -1,13 +1,29 @@
 /// @description 
 
-try {
-
-if (interaccion)
+try
 {
-	fnc_personaje_dice(personaje,textos[accion]);
-	interaccion = false;
-	accion = noone;
-}
+
+    if (interaccion)
+    {
+        if (se_puede[accion])
+        {
+            switch(accion)
+            {
+                case ACCIONES_PLAYER.COGER:
+                    array_insert(obj_player.inventario,-1,self);
+                    instance_destroy(self,true);
+                    break;
+            }
+        }
+        else {
+        {
+            fnc_personaje_dice(personaje,textos[accion]);
+        }
+        }
+    	
+    	interaccion = false;
+    	accion = noone;
+    }
 
 }
 catch (_exception){

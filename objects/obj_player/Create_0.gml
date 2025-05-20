@@ -1,20 +1,22 @@
 /// @description 
 
-try {
+try
+{
 
-sprite_idle = spr_player_idle;
-sprite_caminando = spr_player_caminando;
-sprite_tocar = spr_player_toca;
+    sprite_idle = spr_player_idle;
+    sprite_caminando = spr_player_caminando;
+    sprite_tocar = spr_player_toca;
+    
+    velocidad = 6;
+    destino = noone;
+    objeto = noone;
+    
+    sombra = instance_create_layer(x,y,layer,obj_sombra);
+    sombra.follow = self;
+    
+    proxima_accion = noone;
 
-velocidad = 6;
-destino = noone;
-objeto = noone;
-
-sombra = instance_create_layer(x,y,layer,obj_sombra);
-sombra.follow = self;
-
-proxima_accion = noone;
-
+    inventario = [];
 }
 catch (_exception){
 	show_message("Error en obj_player.create: "+_exception.longMessage);}

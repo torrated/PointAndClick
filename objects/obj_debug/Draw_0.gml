@@ -6,9 +6,8 @@ if (obj_settings.debug)
 {
 	with (obj_player)
 	{
-		//draw_text(x,y,$"accion:{proxima_accion}");
-		//draw_text(x,y+20,$"objeto:{objeto}");
-	}
+		draw_text(x,y,$"inventario:{array_length(inventario)}");
+    }
 	
 	with(obj_interaccionable)
 	{
