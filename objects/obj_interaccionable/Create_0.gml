@@ -24,7 +24,7 @@ try {
     textos[ACCIONES_PLAYER.HABLAR] = "texto genérico para hablar";
     textos[ACCIONES_PLAYER.USAR] = "texto genérico para usar";
     textos[ACCIONES_PLAYER.VER] = "texto genérico para ver";
-
+    
 }
 catch (_exception){
 	show_message("Error en obj_interaccionable.Create: "+_exception.longMessage);}

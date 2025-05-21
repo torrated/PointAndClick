@@ -10,8 +10,8 @@
   "name":"obj_texto",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Interfaz",
+    "path":"folders/Objects/Interfaz.yy",
   },
   "parentObjectId":null,
   "persistent":false,

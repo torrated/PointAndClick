@@ -13,6 +13,9 @@ try
                     array_insert(obj_player.inventario,-1,self);
                     instance_destroy(self,true);
                     break;
+                case ACCIONES_PLAYER.USAR:
+                    show_message("usar");
+                    break;
             }
         }
         else {
