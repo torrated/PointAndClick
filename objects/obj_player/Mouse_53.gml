@@ -1,47 +1,67 @@
-/// @description 
+/// @description Se mira qué accion se debe hacer
 
-try {
-
-if (fnc_raton_en_pantalla())
+try
 {
-	if !(instance_exists(obj_texto))
+	if (fnc_raton_en_pantalla())
 	{
-        if !(obj_inventario.interaccion)
-    		with (obj_destino)
-    		{
-    			instance_destroy(self,true);
-    		}
+		if (estado == ESTADOS_PLAYER.INVENTARIO_ABIERTO) // hay que cerrar el inventario o mirar si hemos clicado en un objeto
+		{
+			estado = ESTADOS_PLAYER.NORMAL;
+			exit;
+		}
+
+		if (estado == ESTADOS_PLAYER.HABLANDO_TEXTO) // hay que escribir algo mas o mirar si se ha seleccionado una opcion
+		{
+			// event_perform_object(obj_texto,ev_mouse,ev_left_press);
+			estado = ESTADOS_PLAYER.NORMAL; // re-mirar esto, quizas el estado deberia ser HABLANDO_TEXTO aun
+			exit;
+		}
 		
-		if (proxima_accion == noone)
+		if (estado == ESTADOS_PLAYER.HABLANDO_BOCADILLO) // ¿hay que cerrar el bocadillo al hacer clic? ¿siguiente linea?
 		{
-			objeto = instance_position(mouse_x,mouse_y,[obj_interaccionable,obj_salir_zona]);
-            if ((instance_exists(objeto) && objeto.object_index <> obj_inventario)
-                or !(instance_exists(objeto)))
-    			destino = instance_create_layer(mouse_x,y,layer,obj_destino);
-            if (instance_exists(objeto) && objeto.object_index == obj_salir_zona)
-                proxima_accion = ACCIONES_PLAYER.SALIR; 
-            if (instance_exists(objeto) && objeto.object_index == obj_inventario)
-                objeto.accion = ACCIONES_PLAYER.USAR;
+			estado = ESTADOS_PLAYER.NORMAL;
+			exit;
 		}
-		else
+		
+		if (estado == ESTADOS_PLAYER.NORMAL) // hay que mirar si se ha clicado algo o solo hay que moverse
 		{
-			objeto = instance_position(obj_ui.x,obj_ui.y,obj_interaccionable); 
-            destino = instance_create_layer(obj_ui.x,y,layer,obj_destino);
-		}
-	
-		if (instance_exists(destino) && x < destino.x)
-			direction = 0;
+			if (proxima_accion == noone) // no se ha sacado el UI con botón derecho
+			{
+				objeto = instance_position(mouse_x,mouse_y,[obj_interaccionable,obj_salir_zona,obj_inventario]); // ¿obj_texto?
+	            
+				if ((instance_exists(objeto) && objeto.object_index <> obj_inventario)// no se ha clicado en nada: el personaje tiene un destino
+	                or !(instance_exists(objeto))) 
+	    			destino = instance_create_layer(mouse_x,y,layer,obj_destino);
+					
+	            if (instance_exists(objeto) && objeto.object_index == obj_salir_zona) // se va a cambiar de zona
+	                proxima_accion = ACCIONES_PLAYER.SALIR; 
+					
+	            if (instance_exists(objeto) && objeto.object_index == obj_inventario) // se abre el inventario
+				{
+	                estado = ESTADOS_PLAYER.INVENTARIO_ABIERTO;
+					obj_inventario.inventario_abierto = true;
+				}
+			}
+			else // accion seleccionada con el UI
+			{
+				objeto = instance_position(obj_ui.x,obj_ui.y,obj_interaccionable); //obj_interaccionable son los unicos que deberian reaccionar a UI
+	            destino = instance_create_layer(obj_ui.x,y,layer,obj_destino);
+			}
 
-		if (instance_exists(destino) && x > destino.x)
-			direction = 180;
+			#region EL PERSONAJE RECIBE DIRECCION Y VELOCIDAD SI APLICA
+			if (instance_exists(destino) && x < destino.x)
+				direction = 0;
+
+			if (instance_exists(destino) && x > destino.x)
+				direction = 180;
         
-        if (instance_exists(destino))
-            speed = velocidad;
-        }
-	else
-		event_perform_object(obj_texto,ev_mouse,ev_left_press);
+	        if (instance_exists(destino))
+	            speed = velocidad;
+			#endregion
+		}
+	}
 }
-
+catch (_exception)
+{
+	show_message("Error en obj_player.GlobalLeftPressed: "+_exception.longMessage);
 }
-catch (_exception){
-	show_message("Error en obj_player.GlobalLeftPressed: "+_exception.longMessage);}
