@@ -1,0 +1,1 @@
+se_puede[ACCIONES_PLAYER.COGER] = true;
