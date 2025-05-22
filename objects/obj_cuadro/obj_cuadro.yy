@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_oficina_cuadro_2",
+  "%Name":"obj_cuadro",
   "eventList":[],
   "managed":true,
-  "name":"obj_oficina_cuadro_2",
+  "name":"obj_cuadro",
   "overriddenProperties":[],
   "parent":{
-    "name":"Oficinas",
-    "path":"folders/Objects/Oficinas.yy",
+    "name":"Despacho",
+    "path":"folders/Objects/Despacho.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_oficina_cuadro2",
-    "path":"sprites/spr_oficina_cuadro2/spr_oficina_cuadro2.yy",
+    "name":"spr_cuadro_9_slices",
+    "path":"sprites/spr_cuadro_9_slices/spr_cuadro_9_slices.yy",
   },
   "spriteMaskId":null,
   "visible":true,
