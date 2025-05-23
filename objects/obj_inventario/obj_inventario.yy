@@ -14,10 +14,7 @@
     "name":"Interfaz",
     "path":"folders/Objects/Interfaz.yy",
   },
-  "parentObjectId":{
-    "name":"obj_interaccionable",
-    "path":"objects/obj_interaccionable/obj_interaccionable.yy",
-  },
+  "parentObjectId":null,
   "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
