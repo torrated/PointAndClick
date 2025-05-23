@@ -26,8 +26,6 @@ try
     
     sombra = instance_create_layer(x,y,layer,obj_sombra);
     sombra.follow = self;
-
-    inventario = [];
 }
 catch (_exception)
 {

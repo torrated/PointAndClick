@@ -4,6 +4,8 @@ try
 {
 	inventario_abierto = false;
 	outline = false;
+	
+	inventario = []; // el inventario de objetos
 }
 catch (_exception)
 {

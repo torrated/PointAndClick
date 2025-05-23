@@ -9,7 +9,7 @@ try
             switch(accion)
             {
                 case ACCIONES_PLAYER.COGER:
-                    array_insert(obj_player.inventario,-1,self);
+                    array_insert(obj_inventario.inventario,-1,self);
                     instance_destroy(self,true);
                     break;
                 case ACCIONES_PLAYER.USAR:
