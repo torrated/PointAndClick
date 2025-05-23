@@ -12,8 +12,8 @@
   "name":"obj_debug",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"1.limpiados",
+    "path":"folders/Objects/1.limpiados.yy",
   },
   "parentObjectId":null,
   "persistent":true,

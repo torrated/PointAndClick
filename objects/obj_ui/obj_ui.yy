@@ -14,8 +14,8 @@
   "name":"obj_ui",
   "overriddenProperties":[],
   "parent":{
-    "name":"Interfaz",
-    "path":"folders/Objects/Interfaz.yy",
+    "name":"1.limpiados",
+    "path":"folders/Objects/1.limpiados.yy",
   },
   "parentObjectId":null,
   "persistent":true,

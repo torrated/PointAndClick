@@ -1,9 +1,11 @@
-/// @description Inserte aquí la descripción
-// Puede escribir su código en este editor
+/// @description
 
-// Inherit the parent event
-event_inherited();
-
-se_puede[ACCIONES_PLAYER.USAR] = true;
-acciones = [ACCIONES_PLAYER.USAR];
-inventario_abierto = false;
+try
+{
+	inventario_abierto = false;
+	outline = false;
+}
+catch (_exception)
+{
+	show_message("Error en obj_inventario.create: "+_exception.longMessage);
+}

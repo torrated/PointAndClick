@@ -6,8 +6,8 @@
   "name":"obj_sillon",
   "overriddenProperties":[],
   "parent":{
-    "name":"Despacho",
-    "path":"folders/Objects/Despacho.yy",
+    "name":"1.limpiados",
+    "path":"folders/Objects/1.limpiados.yy",
   },
   "parentObjectId":null,
   "persistent":false,

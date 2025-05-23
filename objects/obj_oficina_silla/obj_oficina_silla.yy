@@ -6,8 +6,8 @@
   "name":"obj_oficina_silla",
   "overriddenProperties":[],
   "parent":{
-    "name":"Oficinas",
-    "path":"folders/Objects/Oficinas.yy",
+    "name":"1.limpiados",
+    "path":"folders/Objects/1.limpiados.yy",
   },
   "parentObjectId":null,
   "persistent":false,

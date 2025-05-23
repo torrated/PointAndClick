@@ -7,6 +7,7 @@ try
 		if (estado == ESTADOS_PLAYER.INVENTARIO_ABIERTO) // hay que cerrar el inventario o mirar si hemos clicado en un objeto
 		{
 			estado = ESTADOS_PLAYER.NORMAL;
+			obj_inventario.inventario_abierto = false;
 			exit;
 		}
 
