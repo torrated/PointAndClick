@@ -3,13 +3,14 @@
 /// @return {Bool}
 function fnc_raton_en_pantalla()
 {
-try {
-
-return (mouse_x > 0 && mouse_x < room_width && mouse_y > 0 && mouse_y < room_height)
-
-}
-catch (_exception){
-	show_message("Error en fnc_raton_en_pantalla: "+_exception.longMessage);}
+	try
+	{
+		return (mouse_x > 0 && mouse_x < room_width && mouse_y > 0 && mouse_y < room_height)
+	}
+	catch (_exception)
+	{
+		show_message("Error en fnc_raton_en_pantalla: "+_exception.longMessage);
+	}
 }
 
 
@@ -17,38 +18,41 @@ catch (_exception){
 /// @description             Escribe en pantalla un texto de un color con un outline de otro color
 function fnc_texto_dialogo(x, y, outline_color, string_color, string)
 {
-try{
-	var _color = draw_get_color();
-	var _font = draw_get_font();
-	draw_set_font(Font1);
-	xx = argument[0];  
-	yy = argument[1];  
-  
-	//Outline  
-	var _i = 1;
-	repeat(3)
+	try
 	{
-		draw_set_color(argument[2]);  
-		draw_text(xx+_i, yy+_i, argument[4]);  
-		draw_text(xx-_i, yy-_i, argument[4]);  
-		draw_text(xx,   yy+_i, argument[4]);  
-		draw_text(xx+_i,   yy, argument[4]);  
-		draw_text(xx,   yy-_i, argument[4]);  
-		draw_text(xx-_i,   yy, argument[4]);  
-		draw_text(xx-_i, yy+_i, argument[4]);  
-		draw_text(xx+_i, yy-_i, argument[4]);
-		_i += 1;
-	}
+		var _color = draw_get_color();
+		var _font = draw_get_font();
+		draw_set_font(Font1);
+		xx = argument[0];  
+		yy = argument[1];  
   
-	//Text  
-	draw_set_color(argument[3]);  
-	draw_text(xx, yy, argument[4]);  
+		//Outline  
+		var _i = 1;
+		repeat(3)
+		{
+			draw_set_color(argument[2]);  
+			draw_text(xx+_i, yy+_i, argument[4]);  
+			draw_text(xx-_i, yy-_i, argument[4]);  
+			draw_text(xx,   yy+_i, argument[4]);  
+			draw_text(xx+_i,   yy, argument[4]);  
+			draw_text(xx,   yy-_i, argument[4]);  
+			draw_text(xx-_i,   yy, argument[4]);  
+			draw_text(xx-_i, yy+_i, argument[4]);  
+			draw_text(xx+_i, yy-_i, argument[4]);
+			_i += 1;
+		}
+  
+		//Text  
+		draw_set_color(argument[3]);  
+		draw_text(xx, yy, argument[4]);  
 	
-	draw_set_color(_color);
-	draw_set_font(_font);
-}
-catch (_exception){
-	show_message("Error en fnc_texto_dialogo: "+_exception.longMessage);}
+		draw_set_color(_color);
+		draw_set_font(_font);
+	}
+	catch (_exception)
+	{
+		show_message("Error en fnc_texto_dialogo: "+_exception.longMessage);
+	}
 }
 
 
@@ -56,51 +60,53 @@ catch (_exception){
 /// @description             Crea un outline blanco de un sprite
 function fnc_resaltar(x, y, sprite, xscale, yscale, alpha)
 {
-try{
+	try{
 
-	xx = argument[0];  
-	yy = argument[1];
+		xx = argument[0];  
+		yy = argument[1];
 
-	//activa el shader
-	shader_set(shader_blanco);
+		//activa el shader
+		shader_set(shader_blanco);
 
-	//Outline  
-	var _i = 1;
-	repeat(3)
-	{ 
-		draw_sprite_ext(sprite,0,xx+_i, yy+_i,xscale,yscale,0,c_white,alpha);
-		draw_sprite_ext(sprite,0,xx-_i, yy-_i,xscale,yscale,0,c_white,alpha); 
-		draw_sprite_ext(sprite,0,xx,   yy+_i,xscale,yscale,0,c_white,alpha); 
-		draw_sprite_ext(sprite,0,xx+_i,   yy,xscale,yscale,0,c_white,alpha);
-		draw_sprite_ext(sprite,0,xx,   yy-_i,xscale,yscale,0,c_white,alpha);
-		draw_sprite_ext(sprite,0,xx-_i,   yy,xscale,yscale,0,c_white,alpha);
-		draw_sprite_ext(sprite,0,xx-_i, yy+_i,xscale,yscale,0,c_white,alpha);
-		draw_sprite_ext(sprite,0,xx+_i, yy-_i,xscale,yscale,0,c_white,alpha);
-		_i += 1;
+		//Outline  
+		var _i = 1;
+		repeat(3)
+		{ 
+			draw_sprite_ext(sprite,0,xx+_i, yy+_i,xscale,yscale,0,c_white,alpha);
+			draw_sprite_ext(sprite,0,xx-_i, yy-_i,xscale,yscale,0,c_white,alpha); 
+			draw_sprite_ext(sprite,0,xx,   yy+_i,xscale,yscale,0,c_white,alpha); 
+			draw_sprite_ext(sprite,0,xx+_i,   yy,xscale,yscale,0,c_white,alpha);
+			draw_sprite_ext(sprite,0,xx,   yy-_i,xscale,yscale,0,c_white,alpha);
+			draw_sprite_ext(sprite,0,xx-_i,   yy,xscale,yscale,0,c_white,alpha);
+			draw_sprite_ext(sprite,0,xx-_i, yy+_i,xscale,yscale,0,c_white,alpha);
+			draw_sprite_ext(sprite,0,xx+_i, yy-_i,xscale,yscale,0,c_white,alpha);
+			_i += 1;
+		}
+
+		shader_reset();
+
+		//sprite normal  
+		draw_sprite_ext(sprite,0,xx, yy,xscale,yscale,0,c_white,alpha);  
 	}
-
-	shader_reset();
-
-	//sprite normal  
-	draw_sprite_ext(sprite,0,xx, yy,xscale,yscale,0,c_white,alpha);  
+	catch (_exception)
+	{
+		show_message("Error en fnc_resaltar: "+_exception.longMessage);
+	}
 }
-catch (_exception){
-	show_message("Error en fnc_resaltar: "+_exception.longMessage);}
-}
-
 
 
 /// @function                fnc_personaje_dice()
 /// @description             Crea un mensaje sobre un personaje
 function fnc_personaje_dice(personaje,texto)
 {
-try{
-
-	var _bocadillo = instance_create_layer(personaje.x,personaje.y-personaje.sprite_height,"Texto",obj_bocadillo);
-	_bocadillo.texto[0] = texto;
-	
-}
-catch (_exception){
-	show_message("Error en fnc_personaje_dice: "+_exception.longMessage);}
+	try
+	{
+		var _bocadillo = instance_create_layer(personaje.x,personaje.y-personaje.sprite_height,"Texto",obj_bocadillo);
+		_bocadillo.texto[0] = texto;
+	}
+	catch (_exception)
+	{
+		show_message("Error en fnc_personaje_dice: "+_exception.longMessage);
+	}
 }
 
