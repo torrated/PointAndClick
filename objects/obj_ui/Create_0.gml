@@ -25,6 +25,8 @@ try
 
 	accion = noone;
 	seleccionado = false;
+	
+	objetos_no_clicables = [obj_inventario];// array de objetos sobre los que no se debe poder sacar la UI
 }
 catch (_exception)
 {
