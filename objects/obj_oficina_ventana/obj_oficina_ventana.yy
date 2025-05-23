@@ -6,8 +6,8 @@
   "name":"obj_oficina_ventana",
   "overriddenProperties":[],
   "parent":{
-    "name":"1.limpiados",
-    "path":"folders/Objects/1.limpiados.yy",
+    "name":"Oficinas",
+    "path":"folders/Objects/Oficinas.yy",
   },
   "parentObjectId":null,
   "persistent":false,

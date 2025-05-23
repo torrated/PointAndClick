@@ -6,8 +6,8 @@
   "name":"obj_cuadro",
   "overriddenProperties":[],
   "parent":{
-    "name":"1.limpiados",
-    "path":"folders/Objects/1.limpiados.yy",
+    "name":"Debug",
+    "path":"folders/Objects/Debug.yy",
   },
   "parentObjectId":null,
   "persistent":false,

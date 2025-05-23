@@ -6,8 +6,8 @@
   "name":"obj_mesa",
   "overriddenProperties":[],
   "parent":{
-    "name":"1.limpiados",
-    "path":"folders/Objects/1.limpiados.yy",
+    "name":"Despacho",
+    "path":"folders/Objects/Despacho.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -10,8 +10,8 @@
   "name":"obj_startup",
   "overriddenProperties":[],
   "parent":{
-    "name":"1.limpiados",
-    "path":"folders/Objects/1.limpiados.yy",
+    "name":"Juego",
+    "path":"folders/Objects/Juego.yy",
   },
   "parentObjectId":null,
   "persistent":false,

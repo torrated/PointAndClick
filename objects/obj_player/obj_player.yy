@@ -12,8 +12,8 @@
   "name":"obj_player",
   "overriddenProperties":[],
   "parent":{
-    "name":"1.limpiados",
-    "path":"folders/Objects/1.limpiados.yy",
+    "name":"Personajes",
+    "path":"folders/Objects/Personajes.yy",
   },
   "parentObjectId":null,
   "persistent":false,
