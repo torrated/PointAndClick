@@ -1,11 +1,10 @@
-/// @description 
+/// @description Hace o dice algo dependiendo de la accion del player
 
 try
 {
-
-    if (interaccion)
+    if (interaccion) // personaje quiere hacer algo 
     {
-        if (se_puede[accion])
+        if (se_puede[accion]) // comprueba si es una accion valida para esta instancia
         {
             switch(accion)
             {
@@ -14,20 +13,27 @@ try
                     instance_destroy(self,true);
                     break;
                 case ACCIONES_PLAYER.USAR:
-                    show_message("usar");
+                    fnc_personaje_dice(personaje,"Lo voy a usar");
+                    break;
+				case ACCIONES_PLAYER.HABLAR:
+                    fnc_personaje_dice(personaje,"Voy a hablar con él");
+                    break;
+				case ACCIONES_PLAYER.VER:
+                    fnc_personaje_dice(personaje,"Te digo su descripcion");
                     break;
             }
         }
-        else {
+        else //si no es una accion válida, player dice algo
         {
             fnc_personaje_dice(personaje,textos[accion]);
         }
-        }
-    	
-    	interaccion = false;
-    	accion = noone;
-    }
+	}
 
+	// reseteamos
+    interaccion = false;
+    accion = noone;
 }
-catch (_exception){
-	show_message("Error en obj_interaccionable.Step: "+_exception.longMessage);}
+catch (_exception)
+{
+	show_message("Error en obj_interaccionable.Step: "+_exception.longMessage);
+}
