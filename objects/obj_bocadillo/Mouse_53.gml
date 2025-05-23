@@ -1,9 +1,10 @@
 /// @description Al hacer clic se pasa a la siguiente linea o se destruye
 try
 {
-	linea += 1;
-	if (linea >= array_length(texto))
+	if (linea+1 >= array_length(texto))
 		alarm[0] = 1;
+	else
+		linea += 1;
 }
 catch (_exception)
 {
