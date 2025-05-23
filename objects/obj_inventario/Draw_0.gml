@@ -28,14 +28,14 @@ try
 	        draw_set_alpha(0.5);
 	        draw_rectangle(_x_left,7,_x_right,94,true); //dibuja el recuadro
         
-	        if (array_length(obj_player.inventario) >= _i+1) //dibuja los objetos del inventario
+	        if (array_length(inventario) >= _i+1) //dibuja los objetos del inventario
 	        {
 	            draw_set_alpha(_alpha);
-	            var _angle = obj_player.inventario[_i].image_angle;
-	            var _blend = obj_player.inventario[_i].image_blend;
-	            var _image_alpha = obj_player.inventario[_i].image_alpha;
-	            var _width = sprite_get_width(obj_player.inventario[_i].sprite_index);
-	            var _height = sprite_get_height(obj_player.inventario[_i].sprite_index);
+	            var _angle = inventario[_i].image_angle;
+	            var _blend = inventario[_i].image_blend;
+	            var _image_alpha = inventario[_i].image_alpha;
+	            var _width = sprite_get_width(inventario[_i].sprite_index);
+	            var _height = sprite_get_height(inventario[_i].sprite_index);
             
 	            var _new_scale_x = 0;
 	            var _new_scale_y = 0;
@@ -53,7 +53,7 @@ try
 	                _new_scale = max(_new_scale_x,_new_scale_y);
 	            }
             
-	            draw_sprite_ext(obj_player.inventario[_i].sprite_index,0,(_x_right+_x_left)/2,94,_new_scale,_new_scale,_angle,_blend,_image_alpha);
+	            draw_sprite_ext(inventario[_i].sprite_index,0,(_x_right+_x_left)/2,94,_new_scale,_new_scale,_angle,_blend,_image_alpha);
 	        }
 	    }
     
