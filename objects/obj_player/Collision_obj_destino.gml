@@ -1,14 +1,15 @@
-/// @description 
+/// @description Se detiene al llegar al destino, inicia la accion (si hay) y destruye el destino
 
-try {
+try
+{
+	speed = 0;
 
-speed = 0;
-
-if (proxima_accion <> noone)
-	alarm[0] = 1;
+	if (proxima_accion <> noone)
+		alarm[0] = 1;
 	
-instance_destroy(other,true);
-
+	instance_destroy(other,true);
 }
-catch (_exception){
-	show_message("Error en obj_player.colision_objDestino: "+_exception.longMessage);}
+catch (_exception)
+{
+	show_message("Error en obj_player.colision_objDestino: "+_exception.longMessage);
+}

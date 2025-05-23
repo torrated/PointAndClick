@@ -1,21 +1,17 @@
-/// @description 
+/// @description Inicia la interaccion con el objeto de destino
 
-try {
-
-if (objeto <> noone)
+try
+{
+	if (objeto <> noone)
 	{
-		if !(array_contains(objeto.acciones,proxima_accion))
-			fnc_personaje_dice(obj_player,"No puedo hacer eso");
-		else
-		{
-			objeto.interaccion = true;
-			objeto.accion = proxima_accion;
-		}
-			
-		objeto = noone;
-		proxima_accion = noone;
+		objeto.interaccion = true;
+		objeto.accion = proxima_accion;
 	}
-
+	// no hay else porque, si hay una accion pero no un objeto, no hace ni dice nada
+	objeto = noone;
+	proxima_accion = noone;
 }
-catch (_exception){
-	show_message("Error en obj_interaccionable.alarm0: "+_exception.longMessage);}
+catch (_exception)
+{
+	show_message("Error en obj_player.alarm0: "+_exception.longMessage);
+}

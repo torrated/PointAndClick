@@ -1,7 +1,10 @@
-try {
+/// @description Activa el outline
 
-outline = true;
-
+try
+{
+	outline = true;
 }
-catch (_exception){
-	show_message("Error en obj_interaccionable.MouseEnter: "+_exception.longMessage);}
+catch (_exception)
+{
+	show_message("Error en obj_interaccionable.MouseEnter: "+_exception.longMessage);
+}

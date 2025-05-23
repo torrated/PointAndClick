@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_sillon",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_sillon",
   "overriddenProperties":[],
@@ -11,10 +9,7 @@
     "name":"Despacho",
     "path":"folders/Objects/Despacho.yy",
   },
-  "parentObjectId":{
-    "name":"obj_interaccionable",
-    "path":"objects/obj_interaccionable/obj_interaccionable.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

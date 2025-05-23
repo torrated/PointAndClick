@@ -1,7 +1,9 @@
-try {
-
-outline = false;
-
+/// @description Desactiva el outline
+try
+{
+	outline = false;
 }
-catch (_exception){
-	show_message("Error en obj_interaccionable.MouseLeave: "+_exception.longMessage);}
+catch (_exception)
+{
+	show_message("Error en obj_interaccionable.MouseLeave: "+_exception.longMessage);
+}
