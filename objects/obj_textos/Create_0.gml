@@ -27,7 +27,7 @@ pila_papeles[0] = {
 };
 pila_papeles[1] = {
 	spanish:	"No puedo hablar con esto,\nson sólo un montón de papeles.",
-	english:	"I cannot talk to these,\nthey are just a pile of papers."
+	english:	"I cannot talk to this,\nit is just a pile of papers."
 };
 pila_papeles[2] = {
 	spanish:	"Es un montón de currículums.\nQuizás encuentre aquí a mi futura ayudante.",

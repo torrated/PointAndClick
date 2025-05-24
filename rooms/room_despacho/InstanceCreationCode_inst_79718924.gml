@@ -2,13 +2,6 @@
 
 try
 {
-    interaccion = false; // se activa cuando el player ha llegado hasta el objeto y quiere hacer una accion
-    outline = false; //para el reborde luminoso
-    accion = noone; //la accion que player quiere hacer en el objeto
-    acciones = []; // acciones que admite el objeto. Hay que completarlo por instancia
-    
-    personaje = obj_player;
-    
     se_puede[ACCIONES_PLAYER.COGER] = false // para saber si es una accion valida. Se activa por instancia
     se_puede[ACCIONES_PLAYER.HABLAR] = false;
     se_puede[ACCIONES_PLAYER.USAR] = false;
@@ -25,5 +18,5 @@ try
 }
 catch (_exception)
 {
-	show_message("Error en obj_interaccionable.Create: "+_exception.longMessage);
+	show_message("Error en inst_79718924.Create: "+_exception.longMessage);
 }
