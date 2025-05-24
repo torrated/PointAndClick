@@ -20,7 +20,7 @@ generico[4] = {
 	spanish:	"No puedo usar esto aquí.",
 	english:	"I can't use this here."
 };
-
+///////////////////////////////////////////////////////////////////////////////////////////////////
 pila_papeles[0] = {
 	spanish:	"No sabría cuál de ellos coger.\nQuizá debería revisarlos primero.",
 	english:	"I wouldn't know which one should I take.\nMaybe I should review them first"
@@ -32,4 +32,5 @@ pila_papeles[1] = {
 pila_papeles[2] = {
 	spanish:	"Es un montón de currículums.\nQuizás encuentre aquí a mi futura ayudante.",
 	english:	"It's a pile of curriculum.\nMaybe I'll find here my next assistant."
-}
+};
+///////////////////////////////////////////////////////////////////////////////////////////////////
