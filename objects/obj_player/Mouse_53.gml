@@ -7,7 +7,7 @@ try
 		if (estado == ESTADOS_PLAYER.INVENTARIO_ABIERTO) // hay que cerrar el inventario o mirar si hemos clicado en un objeto
 		{
 			estado = ESTADOS_PLAYER.NORMAL;
-			obj_inventario.inventario_abierto = false;
+			obj_inventario.Cerrar_Inventario();
 			exit;
 		}
 
@@ -40,7 +40,7 @@ try
 	            if (instance_exists(objeto) && objeto.object_index == obj_inventario) // se abre el inventario
 				{
 	                estado = ESTADOS_PLAYER.INVENTARIO_ABIERTO;
-					obj_inventario.inventario_abierto = true;
+					obj_inventario.Abrir_Inventario();
 				}
 			}
 			else // accion seleccionada con el UI

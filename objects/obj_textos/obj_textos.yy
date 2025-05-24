@@ -1,19 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_lampara_mesa",
-  "eventList":[],
+  "%Name":"obj_textos",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_lampara_mesa",
+  "name":"obj_textos",
   "overriddenProperties":[],
   "parent":{
-    "name":"Despacho",
-    "path":"folders/Objects/Despacho.yy",
+    "name":"Textos",
+    "path":"folders/Textos.yy",
   },
-  "parentObjectId":{
-    "name":"obj_interaccionable",
-    "path":"objects/obj_interaccionable/obj_interaccionable.yy",
-  },
-  "persistent":false,
+  "parentObjectId":null,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -30,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_despacho_lampara_mesa",
-    "path":"sprites/spr_despacho_lampara_mesa/spr_despacho_lampara_mesa.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

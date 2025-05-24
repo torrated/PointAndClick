@@ -9,7 +9,10 @@
     "name":"Debug",
     "path":"folders/Objects/Debug.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_interaccionable",
+    "path":"objects/obj_interaccionable/obj_interaccionable.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

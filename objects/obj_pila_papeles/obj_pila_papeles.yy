@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_lampara_mesa",
+  "%Name":"obj_pila_papeles",
   "eventList":[],
   "managed":true,
-  "name":"obj_lampara_mesa",
+  "name":"obj_pila_papeles",
   "overriddenProperties":[],
   "parent":{
     "name":"Despacho",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_despacho_lampara_mesa",
-    "path":"sprites/spr_despacho_lampara_mesa/spr_despacho_lampara_mesa.yy",
+    "name":"spr_despacho_pila_papeles",
+    "path":"sprites/spr_despacho_pila_papeles/spr_despacho_pila_papeles.yy",
   },
   "spriteMaskId":null,
   "visible":true,

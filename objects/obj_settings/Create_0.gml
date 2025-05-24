@@ -12,6 +12,12 @@ try
 		cursor_sprite = cursor_flecha;
 		window_set_cursor(cr_none);
 	#endregion
+	
+	#region IDIOMA
+	idioma_seleccionado = 0; //español por defecto
+	idiomas = ["spanish","english"];
+	idioma = idiomas[idioma_seleccionado];
+	#endregion
 }
 catch (_exception)
 {

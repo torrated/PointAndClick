@@ -9,8 +9,7 @@ try
             switch(accion)
             {
                 case ACCIONES_PLAYER.COGER:
-                    array_insert(obj_inventario.inventario,-1,self);
-                    instance_destroy(self,true);
+					obj_inventario.Add_Inventario(id);
                     break;
                 case ACCIONES_PLAYER.USAR:
                     fnc_personaje_dice(personaje,"Lo voy a usar");
