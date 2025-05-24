@@ -21,7 +21,7 @@ generico[4] = {
 	english:	"I can't use this here."
 };
 
-pila_paleles[0] = {
+pila_papeles[0] = {
 	spanish:	"No sabría cuál de ellos coger.\nQuizá debería revisarlos primero.",
 	english:	"I wouldn't know which one should I take.\nMaybe I should review them first"
 };
