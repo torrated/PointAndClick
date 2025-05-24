@@ -6,20 +6,20 @@ try
 	else
 		draw_self(); // para dibujar el maletín
 
-	if (inventario_abierto)
+	if (inventario_abierto && array_length(inventario) > 0)
 	{
 	    var _color = draw_get_color();
 	    var _alpha = draw_get_alpha();
     
 	    draw_set_color(c_black);
 	    draw_set_alpha(0.5);
-	    draw_rectangle(96,5,room_width-(scale/2),96,false); // este es el recuadro largo negro de background
+	    draw_rectangle(96,5,100+(89*(array_length(inventario)-1))+scale,96,false); // este es el recuadro largo negro de background
 		
 		var _x_left = 0; // esta y el siguiente son para poder dibujos los cuadros en un FOR
 	    var _x_right = 0;
 	    draw_set_color(c_white);
     
-	    for (var _i = 0; _i <= 19; _i++) // 19 porque es el número máximo de cuadros que entran
+	    for (var _i = 0; _i < array_length(inventario); _i++)
 	    {
 	        _x_left = 98+(89*_i);
 	        _x_right = 98+(89*_i)+scale;
