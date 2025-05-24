@@ -15,6 +15,10 @@ try
 		{
 			objecto: obj_ui,
 			cargado: false
+		},
+		{
+			objecto: obj_textos,
+			cargado: false
 		}
 	];
 	#endregion
