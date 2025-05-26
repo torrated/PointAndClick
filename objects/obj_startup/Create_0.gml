@@ -19,6 +19,10 @@ try
 		{
 			objecto: obj_textos,
 			cargado: false
+		},
+		{
+			objecto: obj_historia,
+			cargado: false
 		}
 	];
 	#endregion

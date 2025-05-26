@@ -19,6 +19,11 @@ try
 		{
 			//draw_text(0,0,$"{x},{y}");
 		}
+		
+		with (obj_historia)
+		{
+			draw_text(0,1000,$"Escena: {escena}\nSecuencia: {secuencia}");
+		}
 	}
 }
 catch (_exception)
