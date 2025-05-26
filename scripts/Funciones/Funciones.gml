@@ -110,3 +110,42 @@ function fnc_personaje_dice(personaje,texto)
 	}
 }
 
+
+/// @function		fnc_secuencia_activa()
+/// @description	Devuelve true o false dependiendo de si la escrna y secuencia actuales estan contenidas en _array
+function fnc_secuencia_activa(_array)
+{
+	try
+	{
+		return array_contains(_array,string(obj_historia.escena)+","+string(obj_historia.secuencia));
+	}
+	catch (_exception)
+	{
+		show_message("Error en fnc_secuencia_activa: "+_exception.longMessage);
+	}
+}
+
+/// @function		fnc_texto_denegado()
+/// @description	Si hay un texto de denegacion para esta escena+secuencia hace que lo diga el personaje.
+///					Si no lo hay, busca por sólo escena
+///					Si no lo hay, hace el texto por defecto
+function fnc_texto_denegado(_array)
+{
+	try
+	{
+		var _escena = string(obj_historia.escena);
+		var _secuencia = string(obj_historia.secuencia);
+		var _escena_secuencia = _escena+","+_secuencia;
+		
+		if (struct_exists(_array,_escena_secuencia)) //existe un texto especifico para esta escena+secuencia
+			return textos_denegados[$ _escena_secuencia];
+		else if (struct_exists(_array,_escena)) //existe un texto especifico para esta escena
+				return textos_denegados[$ _escena];
+			else
+				return textos_denegados[$ "0,0"];
+	}
+	catch (_exception)
+	{
+		show_message("Error en fnc_texto_denegado: "+_exception.longMessage);
+	}
+}
