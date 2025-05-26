@@ -3,6 +3,7 @@
 try
 {
     interaccion = false; // se activa cuando el player ha llegado hasta el objeto y quiere hacer una accion
+	numero_interacciones = 0; // por si hay que llevar la cuenta
     outline = false; //para el reborde luminoso
     accion = noone; //la accion que player quiere hacer en el objeto
     acciones = []; // acciones que admite el objeto. Hay que completarlo por instancia
