@@ -42,7 +42,12 @@ try
 		obj_inventario.Add_Inventario(_curriculum.id);
 		se_puede[ACCIONES_PLAYER.COGER] = false;
 		textos[ACCIONES_PLAYER.COGER] = obj_textos.pila_papeles[7][$ obj_settings.idioma];
-	}
+	};
+	
+	function fnc_ver()
+	{
+		fnc_personaje_dice(obj_player,obj_textos.pila_papeles[2][$ obj_settings.idioma]);
+	};
 }
 catch (_exception)
 {

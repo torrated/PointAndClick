@@ -34,8 +34,8 @@ pila_papeles[2] = {
 	english:	"It's a pile of curriculum.\nMaybe I'll find here my next assistant."
 };
 pila_papeles[3] = {
-	spanish:	"No necesito revisar más currículums,\nya he encontrado el que buscaba.",
-	english:	"I don't need to review more curriculums\nI found the one I was looking for."
+	spanish:	"Ya he encontrado el curriculum que buscaba,\ndebería cogerlo.",
+	english:	"I already found the curriculum I was looking for,\nI should take it."
 };
 pila_papeles[4] = {
 	spanish:	"Éste no está mal,pero no tiene\nmucha experiencia en el mundo editorial.",
