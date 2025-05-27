@@ -3,6 +3,16 @@
 escena = 1;
 secuencia = 1;
 
+function fnc_incrementa_secuencia()
+{
+	switch (escena)
+	{
+		case 1:	if (secuencia < 5)secuencia += 1;
+				else { escena = 2; secuencia = 1; }
+				break;
+	};
+};
+
 /*
 	Escena 1
 		- OBJETIVO: buscar el curriculum, dárselo a Ratonila, e irse a casa.
