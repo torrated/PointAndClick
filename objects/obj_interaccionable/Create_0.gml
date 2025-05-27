@@ -22,7 +22,31 @@ try
     textos[ACCIONES_PLAYER.USAR] = obj_textos.generico[2][$ obj_settings.idioma];
     textos[ACCIONES_PLAYER.VER] = obj_textos.generico[3][$ obj_settings.idioma];
     textos[ACCIONES_PLAYER.USAR_DESDE_INVENTARIO] = obj_textos.generico[4][$ obj_settings.idioma];
-    
+
+	usable_en_secuencias = ["1,1"]; //contiene las escenas y secuencias en que se puede usar, en formato x,x
+	
+	textos_denegados = {}; //contiene los textos cuando se intenta usar en una secuencia no permitida
+	textos_denegados[$ "0,0"] = "No puedo hacer eso en esta secuencia"; // 0,0 es el texto por defecto
+
+	function fnc_hablar()
+	{
+		fnc_personaje_dice(personaje,"Voy a hablar con él");
+	};
+	
+	function fnc_usar()
+	{
+		fnc_personaje_dice(personaje,"Lo voy a usar");
+	};
+	
+	function fnc_ver()
+	{
+		fnc_personaje_dice(personaje,"Te digo su descripcion");
+	};
+	
+	function fnc_coger()
+	{
+		obj_inventario.Add_Inventario(self.id);
+	};
 }
 catch (_exception)
 {

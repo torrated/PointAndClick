@@ -7,15 +7,15 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_AB6448D","path":"rooms/room_debug/room_debug.yy",},
+    {"name":"inst_3FD60999","path":"rooms/room_debug/room_debug.yy",},
     {"name":"inst_7E10B2CD","path":"rooms/room_debug/room_debug.yy",},
+    {"name":"inst_6B476E7","path":"rooms/room_debug/room_debug.yy",},
     {"name":"inst_29C2754B","path":"rooms/room_debug/room_debug.yy",},
     {"name":"inst_6ACE4A2D","path":"rooms/room_debug/room_debug.yy",},
     {"name":"inst_7BEFD125","path":"rooms/room_debug/room_debug.yy",},
     {"name":"inst_3593B8F5","path":"rooms/room_debug/room_debug.yy",},
     {"name":"inst_6FAD19CC","path":"rooms/room_debug/room_debug.yy",},
     {"name":"inst_5E4ED868","path":"rooms/room_debug/room_debug.yy",},
-    {"name":"inst_3FD60999","path":"rooms/room_debug/room_debug.yy",},
-    {"name":"inst_6B476E7","path":"rooms/room_debug/room_debug.yy",},
   ],
   "isDnd":false,
   "layers":[
