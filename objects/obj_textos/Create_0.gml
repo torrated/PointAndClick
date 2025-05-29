@@ -31,11 +31,11 @@ pila_papeles[1] = {
 };
 pila_papeles[2] = {
 	spanish:	"Es un montón de currículums.\nQuizás encuentre aquí a mi futura ayudante.",
-	english:	"It's a pile of curriculum.\nMaybe I'll find here my next assistant."
+	english:	"It's a pile of resumes.\nMaybe I'll find here my next assistant."
 };
 pila_papeles[3] = {
 	spanish:	"Ya he encontrado el curriculum que buscaba,\ndebería cogerlo.",
-	english:	"I already found the curriculum I was looking for,\nI should take it."
+	english:	"I already found the resume I was looking for,\nI should take it."
 };
 pila_papeles[4] = {
 	spanish:	"Éste no está mal,pero no tiene\nmucha experiencia en el mundo editorial.",
@@ -58,3 +58,7 @@ pila_papeles[8] = {
 	english:	"I should bring this to Ratonila im-me-diat-ly"
 };
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+nombres[0] = {
+	spanish:	"Currículum",
+	english:	"Resume"
+};

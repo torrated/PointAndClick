@@ -25,9 +25,9 @@ try
 			draw_text(0,1000,$"Escena: {escena}\nSecuencia: {secuencia}");
 		}
 		
-		with (obj_inventario)
+		with (obj_settings)
 		{
-			draw_text(0,1050,$"inventario: {inventario}");
+			draw_text(0,1050,$"idioma: {idioma_seleccionado}");
 		}
 	}
 }
