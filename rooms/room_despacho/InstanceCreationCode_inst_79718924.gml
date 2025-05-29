@@ -3,7 +3,6 @@
 try
 {
 	usable_en_secuencias = ["1,1","1,2","1,3","1,4"]; 
-	nombre = "79718924";
 	
     se_puede[ACCIONES_PLAYER.COGER] = false // para saber si es una accion valida. Se activa por instancia
     se_puede[ACCIONES_PLAYER.HABLAR] = false;
@@ -40,6 +39,7 @@ try
 	{
 		fnc_personaje_dice(obj_player,obj_textos.pila_papeles[8][$ obj_settings.idioma]);
 		var _curriculum = instance_create_layer(x,y,layer,obj_curriculum);
+		_curriculum.nombre = "Currículum";
 		obj_inventario.Add_Inventario(_curriculum.id);
 		se_puede[ACCIONES_PLAYER.COGER] = false;
 		textos[ACCIONES_PLAYER.COGER] = obj_textos.pila_papeles[7][$ obj_settings.idioma];

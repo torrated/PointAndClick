@@ -5,7 +5,6 @@ try
 	texto = []; // lineas de texto. Cada linea es una posicion del array
 	linea = 0; // linea actual siendo escrita
 	tiempo = 180; // frames hasta que desaparece el texto de la pantalla 
-	//alarm[0] = tiempo; 
 	follow = noone; // por si el personaje se mueve al hablar y hay que seguirlo
 }
 catch (_exception)
