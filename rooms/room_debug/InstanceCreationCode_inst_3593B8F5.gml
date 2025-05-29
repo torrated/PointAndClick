@@ -1,6 +1,7 @@
 try
 {
 	se_puede[ACCIONES_PLAYER.COGER] = true;
+	nombre = "Teléfono";
 
 	function fnc_coger()
 	{

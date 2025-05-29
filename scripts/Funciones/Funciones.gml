@@ -97,12 +97,14 @@ function fnc_resaltar(x, y, sprite, xscale, yscale, alpha)
 
 /// @function                fnc_personaje_dice()
 /// @description             Crea un mensaje sobre un personaje
-function fnc_personaje_dice(personaje,texto)
+function fnc_personaje_dice(personaje,texto,tiempo = 0)
 {
 	try
 	{
 		var _bocadillo = instance_create_layer(personaje.x,personaje.y-personaje.sprite_height,"Texto",obj_bocadillo);
 		_bocadillo.texto[0] = texto;
+		if (tiempo <> 0)
+			_bocadillo.tiempo = tiempo;
 	}
 	catch (_exception)
 	{

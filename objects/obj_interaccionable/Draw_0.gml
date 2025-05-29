@@ -3,7 +3,11 @@
 try
 {
 	if (outline)
+	{
 		fnc_resaltar(x,y,sprite_index,image_xscale,image_yscale,image_alpha);
+		if (array_contains(obj_inventario.inventario,self.id))
+			fnc_personaje_dice(self,nombre,1);
+	}
 	else
 		draw_self();
 }

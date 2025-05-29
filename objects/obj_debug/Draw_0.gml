@@ -24,6 +24,11 @@ try
 		{
 			draw_text(0,1000,$"Escena: {escena}\nSecuencia: {secuencia}");
 		}
+		
+		with (obj_inventario)
+		{
+			draw_text(0,1050,$"inventario: {inventario}");
+		}
 	}
 }
 catch (_exception)

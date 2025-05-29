@@ -3,6 +3,7 @@
 try
 {
 	usable_en_secuencias = ["1,1","1,2","1,3","1,4"]; 
+	nombre = "79718924";
 	
     se_puede[ACCIONES_PLAYER.COGER] = false // para saber si es una accion valida. Se activa por instancia
     se_puede[ACCIONES_PLAYER.HABLAR] = false;
