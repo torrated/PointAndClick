@@ -3,6 +3,7 @@
 try {
 
 destino = room_oficinas;
+usable_en_secuencias = ["1,1","1,2","1,3","1,4","1,5"];
 
 }
 catch (_exception){

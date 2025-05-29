@@ -112,7 +112,7 @@ function fnc_personaje_dice(personaje,texto)
 
 
 /// @function		fnc_secuencia_activa()
-/// @description	Devuelve true o false dependiendo de si la escrna y secuencia actuales estan contenidas en _array
+/// @description	Devuelve true o false dependiendo de si la escena y secuencia actuales estan contenidas en _array
 function fnc_secuencia_activa(_array)
 {
 	try
