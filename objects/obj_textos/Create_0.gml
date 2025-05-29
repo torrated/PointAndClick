@@ -50,8 +50,8 @@ pila_papeles[6] = {
 	english:	"This one! This is it!\nThis is the assistant I need!"
 };
 pila_papeles[7] = {
-	spanish:	"Ya tengo el que quería,\nno necesito coger más.",
-	english:	"I already have the one I wanted,\nI don't need to take more."
+	spanish:	"Ya tengo el que quería,\nno necesito más.",
+	english:	"I already have the one I wanted,\nI don't need more."
 };
 pila_papeles[8] = {
 	spanish:	"Debería llevarle esto a Ratonila de in-me-dia-to.",
