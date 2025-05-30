@@ -3,6 +3,7 @@
 try
 {
 	destino = noone;
+	punto_aparicion = obj_punto_aparicion_1; // por defecto es 1 (izquierda)
 	interaccion = false;
 	acciones = [ACCIONES_PLAYER.SALIR];
 	

@@ -21,6 +21,8 @@
     {"name":"inst_1852C4BE","path":"rooms/room_despacho/room_despacho.yy",},
     {"name":"inst_79718924","path":"rooms/room_despacho/room_despacho.yy",},
     {"name":"inst_48C89CCD","path":"rooms/room_despacho/room_despacho.yy",},
+    {"name":"inst_FF8BD22","path":"rooms/room_despacho/room_despacho.yy",},
+    {"name":"inst_415E218","path":"rooms/room_despacho/room_despacho.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -37,6 +39,8 @@
       ],"layers":[],"name":"ObjetosForeground","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Player","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_AB6448D_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_AB6448D_1","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":800.0,},
+        {"$GMRInstance":"v2","%Name":"inst_FF8BD22","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_FF8BD22","objectId":{"name":"obj_punto_aparicion_1","path":"objects/obj_punto_aparicion_1/obj_punto_aparicion_1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":800.0,},
+        {"$GMRInstance":"v2","%Name":"inst_415E218","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_415E218","objectId":{"name":"obj_punto_aparicion_2","path":"objects/obj_punto_aparicion_2/obj_punto_aparicion_2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1792.0,"y":800.0,},
       ],"layers":[],"name":"Player","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"ObjetosBackground","depth":400,"effectEnabled":true,"effectType":null,"gridX":1,"gridY":1,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_393AFFAA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_393AFFAA","objectId":{"name":"obj_cuadro","path":"objects/obj_cuadro/obj_cuadro.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.5526316,"scaleY":4.2368407,"x":707.0263,"y":297.0,},

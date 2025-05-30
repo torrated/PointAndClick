@@ -23,6 +23,10 @@ try
 		{
 			objecto: obj_historia,
 			cargado: false
+		},
+		{
+			objecto: obj_juego,
+			cargado: false
 		}
 	];
 	#endregion
