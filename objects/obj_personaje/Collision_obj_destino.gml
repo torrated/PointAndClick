@@ -11,5 +11,5 @@ try
 }
 catch (_exception)
 {
-	show_message("Error en obj_player.colision_objDestino: "+_exception.longMessage);
+	show_message("Error en obj_personaje.colision_objDestino: "+_exception.longMessage);
 }

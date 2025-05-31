@@ -1,4 +1,4 @@
-/// @description 
+/// @description Parent de player y los NPC
 
 try
 {
@@ -29,5 +29,5 @@ try
 }
 catch (_exception)
 {
-	show_message("Error en obj_player.create: "+_exception.longMessage);
+	show_message("Error en obj_personaje.create: "+_exception.longMessage);
 }

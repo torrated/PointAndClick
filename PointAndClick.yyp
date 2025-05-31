@@ -62,6 +62,7 @@
     {"id":{"name":"obj_oficina_mesa","path":"objects/obj_oficina_mesa/obj_oficina_mesa.yy",},},
     {"id":{"name":"obj_oficina_silla","path":"objects/obj_oficina_silla/obj_oficina_silla.yy",},},
     {"id":{"name":"obj_oficina_ventana","path":"objects/obj_oficina_ventana/obj_oficina_ventana.yy",},},
+    {"id":{"name":"obj_personaje","path":"objects/obj_personaje/obj_personaje.yy",},},
     {"id":{"name":"obj_pila_papeles","path":"objects/obj_pila_papeles/obj_pila_papeles.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_puerta","path":"objects/obj_puerta/obj_puerta.yy",},},

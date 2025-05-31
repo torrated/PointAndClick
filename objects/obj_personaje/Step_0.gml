@@ -18,5 +18,5 @@ try
 }
 catch (_exception)
 {
-	show_message("Error en obj_player.step: "+_exception.longMessage);
+	show_message("Error en obj_personaje.step: "+_exception.longMessage);
 }
