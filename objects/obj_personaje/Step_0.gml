@@ -10,7 +10,7 @@ try
 		else
 			image_xscale = -1;
 	}
-	else if (sprite_index == sprite_caminando)
+	else
 	{
 		sprite_index = sprite_idle;
 		image_index = 0;

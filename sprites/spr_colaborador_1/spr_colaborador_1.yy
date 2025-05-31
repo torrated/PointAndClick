@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Stliton",
-    "path":"folders/Sprites/Personajes/Stliton.yy",
+    "name":"Oficinas",
+    "path":"folders/Sprites/Personajes/Oficinas.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
