@@ -11,8 +11,7 @@ try
 	
 		with(obj_interaccionable)
 		{
-			//draw_text(x,y,$"interaccion:{interaccion}");
-			//draw_text(x,y-30,$"acciones:{acciones}");
+			draw_text(x,y,$"depth:{depth}");
 		}
 	
 		with(obj_ui)
@@ -27,7 +26,7 @@ try
 		
 		with (obj_settings)
 		{
-			draw_text(0,1050,$"idioma: {idioma_seleccionado}");
+			//draw_text(0,1050,$"idioma: {idioma_seleccionado}");
 		}
 	}
 }

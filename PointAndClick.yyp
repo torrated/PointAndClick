@@ -61,6 +61,7 @@
     {"id":{"name":"obj_lampara_mesa","path":"objects/obj_lampara_mesa/obj_lampara_mesa.yy",},},
     {"id":{"name":"obj_lampara_pie","path":"objects/obj_lampara_pie/obj_lampara_pie.yy",},},
     {"id":{"name":"obj_mesa","path":"objects/obj_mesa/obj_mesa.yy",},},
+    {"id":{"name":"obj_mouse","path":"objects/obj_mouse/obj_mouse.yy",},},
     {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},},
     {"id":{"name":"obj_oficina_mesa","path":"objects/obj_oficina_mesa/obj_oficina_mesa.yy",},},
     {"id":{"name":"obj_oficina_silla","path":"objects/obj_oficina_silla/obj_oficina_silla.yy",},},

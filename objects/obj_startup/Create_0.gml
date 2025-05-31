@@ -27,6 +27,10 @@ try
 		{
 			objecto: obj_juego,
 			cargado: false
+		},
+		{
+			objecto: obj_mouse,
+			cargado: false
 		}
 	];
 	#endregion

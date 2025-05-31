@@ -1,4 +1,3 @@
-/// @function                fnc_raton_en_pantalla()
 /// @description             Indica si el raton esta en el Room (true) o no (false)
 /// @return {Bool}
 function fnc_raton_en_pantalla()
@@ -14,7 +13,6 @@ function fnc_raton_en_pantalla()
 }
 
 
-/// @function                fnc_texto_dialogo()
 /// @description             Escribe en pantalla un texto de un color con un outline de otro color
 function fnc_texto_dialogo(x, y, outline_color, string_color, string)
 {
@@ -56,7 +54,6 @@ function fnc_texto_dialogo(x, y, outline_color, string_color, string)
 }
 
 
-/// @function                fnc_resaltar()
 /// @description             Crea un outline blanco de un sprite
 function fnc_resaltar(x, y, sprite, xscale, yscale, alpha)
 {
@@ -95,7 +92,6 @@ function fnc_resaltar(x, y, sprite, xscale, yscale, alpha)
 }
 
 
-/// @function                fnc_personaje_dice()
 /// @description             Crea un mensaje sobre un personaje
 function fnc_personaje_dice(personaje,texto,tiempo = 0)
 {
@@ -113,7 +109,6 @@ function fnc_personaje_dice(personaje,texto,tiempo = 0)
 }
 
 
-/// @function		fnc_secuencia_activa()
 /// @description	Devuelve true o false dependiendo de si la escena y secuencia actuales estan contenidas en _array
 function fnc_secuencia_activa(_array)
 {
@@ -127,7 +122,6 @@ function fnc_secuencia_activa(_array)
 	}
 }
 
-/// @function		fnc_texto_denegado()
 /// @description	Si hay un texto de denegacion para esta escena+secuencia hace que lo diga el personaje.
 ///					Si no lo hay, busca por sólo escena
 ///					Si no lo hay, hace el texto por defecto
