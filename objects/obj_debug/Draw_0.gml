@@ -11,7 +11,7 @@ try
 	
 		with(obj_interaccionable)
 		{
-			draw_text(x,y,$"depth:{depth}");
+			//draw_text(x,y,$"depth:{depth}");
 		}
 	
 		with(obj_ui)
