@@ -28,13 +28,14 @@ try
 		{
 			if (proxima_accion == noone || proxima_accion == ACCIONES_PLAYER.SALIR) // no se ha sacado el UI con botón derecho
 			{
-				objeto = instance_position(mouse_x,mouse_y,[obj_interaccionable,obj_salir_zona,obj_inventario]); // ¿obj_texto?
+				objeto = instance_position(mouse_x,mouse_y,[obj_interaccionable,obj_salir_zona,obj_inventario,obj_npc]); // ¿obj_texto?
 	            
 				if ((instance_exists(objeto) && objeto.object_index <> obj_inventario)// no se ha clicado en nada: el personaje tiene un destino
 	                or !(instance_exists(objeto))) 
 					{
 						with (obj_destino) { instance_destroy(self); };
 		    			destino = instance_create_layer(mouse_x,y,layer,obj_destino);
+						destino.personaje = id;
 					}
 					
 	            if (instance_exists(objeto) && objeto.object_index == obj_salir_zona) // se va a cambiar de zona
@@ -51,7 +52,7 @@ try
 				objeto = instance_position(obj_ui.x,obj_ui.y,obj_interaccionable); //obj_interaccionable son los unicos que deberian reaccionar a UI
 	            with (obj_destino) { instance_destroy(self); };
 				destino = instance_create_layer(obj_ui.x,y,layer,obj_destino);
-				
+				destino.personaje = id;
 			}
 
 			#region EL PERSONAJE RECIBE DIRECCION Y VELOCIDAD SI APLICA

@@ -2,12 +2,15 @@
 
 try
 {
-	speed = 0;
+	if (other.personaje == noone || other.personaje == id)
+	{
+		speed = 0;
 
-	if (proxima_accion <> noone)
-		alarm[0] = 1;
+		if (proxima_accion <> noone)
+			alarm[0] = 1;
 	
-	instance_destroy(other,true);
+		instance_destroy(other,true);
+	}
 }
 catch (_exception)
 {

@@ -6,7 +6,7 @@ try
 	{
 		with (obj_player)
 		{
-			//draw_text(x,y,$"inventario:{array_length(inventario)}");
+			draw_text(x,y,$"proxima_accion:{proxima_accion}");
 	    }
 	
 		with(obj_interaccionable)
