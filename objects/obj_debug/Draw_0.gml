@@ -28,6 +28,11 @@ try
 		{
 			//draw_text(0,1050,$"idioma: {idioma_seleccionado}");
 		}
+		
+		with (obj_destino)
+		{
+			draw_text(0,1050,$"x,y: {x},{y}");
+		}
 	}
 }
 catch (_exception)
