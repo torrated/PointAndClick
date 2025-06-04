@@ -33,6 +33,11 @@ try
 		{
 			draw_text(0,1050,$"x,y: {x},{y}");
 		}
+		
+		with (obj_inventario)
+		{
+			draw_text(0,100,$"inventario:{array_length(inventario)}");
+		}
 	}
 }
 catch (_exception)
