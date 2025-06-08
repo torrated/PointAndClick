@@ -6,8 +6,7 @@ try
 	outline = false;
 	
 	inventario = []; // el inventario de objetos
-    inventario_ids = []; // los IDs de las instancias
-    inventario_nombres = []; // los nombres de los objetos
+    inventario_struct = {};
     
 	scale = 87; //tamaño de los cuadros
 	altura = 94;
@@ -15,8 +14,11 @@ try
 	///@description Añade un objeto al inventario y lo desactiva
 	function Add_Inventario(_id)
 	{
-		array_insert(inventario,-1,_id.object_index);
-		array_insert(inventario_nombres,-1,_id.nombre);
+        inventario_struct.objeto = _id.object_index;
+        inventario_struct.nombre = _id.nombre;
+        inventario_struct._id = 0; //se completa luego al crear la instancia
+        
+		array_insert(inventario,-1,inventario_struct);
 		instance_destroy(_id,false);
 	}
 
@@ -33,11 +35,10 @@ try
 			{
 				_x_left = 98+(89*_i);
 				_x_right = 98+(89*_i)+scale;
-                inventario_ids[_i] = instance_create_layer(0,0,layer,inventario[_i]);
-                inventario_ids[_i].depth -= 1;
-                inventario_ids[_i].nombre = inventario_nombres[_i];
-			    var _width = inventario_ids[_i].sprite_width;
-			    var _height = inventario_ids[_i].sprite_height;
+                inventario[_i]._id = instance_create_layer(0,0,layer,inventario[_i].objeto);
+                inventario[_i]._id.depth -= 1;
+			    var _width = inventario[_i]._id.sprite_width;
+			    var _height = inventario[_i]._id.sprite_height;
 			    var _new_scale_x = 0;
 			    var _new_scale_y = 0;
 			    var _new_scale = 0;
@@ -54,10 +55,10 @@ try
 			        _new_scale = max(_new_scale_x,_new_scale_y);
 			    }
 
-				inventario_ids[_i].x = (_x_right+_x_left)/2;
-				inventario_ids[_i].y = altura;
-				inventario_ids[_i].image_xscale = _new_scale;
-				inventario_ids[_i].image_yscale = _new_scale;
+				inventario[_i]._id.x = (_x_right+_x_left)/2;
+				inventario[_i]._id.y = altura;
+				inventario[_i]._id.image_xscale = _new_scale;
+				inventario[_i]._id.image_yscale = _new_scale;
 			}
 	    }
 	}
@@ -65,11 +66,11 @@ try
 	function Cerrar_Inventario()
 	{
 		inventario_abierto = false;
-		if (array_length(inventario_ids) > 0) // destruye las instancias del inventario de ids
+		if (array_length(inventario) > 0) // destruye las instancias del inventario de ids
         {
-			for (var _i = 0; _i < array_length(inventario_ids); _i++)
+			for (var _i = 0; _i < array_length(inventario); _i++)
 			{
-				instance_destroy(inventario_ids[_i],false);
+				instance_destroy(inventario[_i]._id,false);
 			}
 		}
 	}
