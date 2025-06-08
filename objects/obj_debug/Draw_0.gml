@@ -38,6 +38,8 @@ try
 		{
 			draw_text(0,100,$"inventario:{array_length(inventario)}");
 		}
+        
+        //draw_text(0,150,$"numero de obj_inventario:{instance_number(obj_inventario)}");
 	}
 }
 catch (_exception)
