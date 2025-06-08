@@ -16,8 +16,18 @@ try
 	#region IDIOMA
 	idioma_seleccionado = 0; //español por defecto
 	idiomas = ["spanish","english"];
-	idioma = idiomas[idioma_seleccionado];
+	//idioma = idiomas[idioma_seleccionado];
+	fnc_cambiar_idioma(idioma_seleccionado);
 	#endregion
+	
+	/// @description Cambia el idioma del juego.
+	/// 0: español
+	/// 1: english
+	function fnc_cambiar_idioma(_idioma)
+	{
+		idioma_seleccionado = _idioma;
+		idioma = idiomas[_idioma];
+	}
 }
 catch (_exception)
 {

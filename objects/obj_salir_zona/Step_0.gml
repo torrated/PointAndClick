@@ -3,8 +3,16 @@
 try
 {
 	if (interaccion)
-		if (destino <> noone)
-	        room_goto(destino);
+		if (fnc_secuencia_activa(usable_en_secuencias)) // se puede atravesar en esta escena+secuencia
+	    {
+			obj_juego.punto_aparicion = punto_aparicion;
+			room_goto(destino);
+		}
+		else
+		{
+			fnc_personaje_dice(obj_player,fnc_texto_denegado(textos_denegados));
+			interaccion = false;
+		}
 }
 catch (_exception)
 {

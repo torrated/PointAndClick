@@ -3,7 +3,21 @@
 try
 {
 	if (outline)
+	{
 		fnc_resaltar(x,y,sprite_index,image_xscale,image_yscale,image_alpha);
+        var _encontrado = false;
+        var _i = 0;
+        for (_i = 0; _i < array_length(obj_inventario.inventario); _i++)
+        {
+            if (obj_inventario.inventario[_i]._id == self.id)
+            {
+                _encontrado = true;
+                break;
+            }
+        }
+		if (_encontrado)
+			fnc_personaje_dice(self,obj_inventario.inventario[_i].nombre,1);
+	}
 	else
 		draw_self();
 }

@@ -13,5 +13,5 @@ try
 }
 catch (_exception)
 {
-	show_message("Error en obj_player.alarm0: "+_exception.longMessage);
+	show_message("Error en obj_personaje.alarm0: "+_exception.longMessage);
 }

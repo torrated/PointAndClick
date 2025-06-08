@@ -10,7 +10,7 @@ try
 		else
 			image_xscale = -1;
 	}
-	else if (sprite_index == sprite_caminando)
+	else
 	{
 		sprite_index = sprite_idle;
 		image_index = 0;
@@ -18,5 +18,5 @@ try
 }
 catch (_exception)
 {
-	show_message("Error en obj_player.step: "+_exception.longMessage);
+	show_message("Error en obj_personaje.step: "+_exception.longMessage);
 }
