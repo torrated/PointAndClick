@@ -1,7 +1,7 @@
 /// @description Se mira qué accion se debe hacer
 
 try
-{
+{ if (1==2) {
 	if (fnc_raton_en_pantalla())
 	{
 		if (estado == ESTADOS_PLAYER.INVENTARIO_ABIERTO) // hay que cerrar el inventario o mirar si hemos clicado en un objeto
@@ -74,7 +74,7 @@ try
 	            speed = velocidad;
 			#endregion
 		}
-	}
+	}}
 }
 catch (_exception)
 {
