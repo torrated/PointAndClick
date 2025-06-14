@@ -88,6 +88,7 @@
     {"id":{"name":"room_oficinas","path":"rooms/room_oficinas/room_oficinas.yy",},},
     {"id":{"name":"room_startup","path":"rooms/room_startup/room_startup.yy",},},
     {"id":{"name":"Funciones","path":"scripts/Funciones/Funciones.yy",},},
+    {"id":{"name":"NuevasFunciones","path":"scripts/NuevasFunciones/NuevasFunciones.yy",},},
     {"id":{"name":"shader_blanco","path":"shaders/shader_blanco/shader_blanco.yy",},},
     {"id":{"name":"spr_acciones_coger","path":"sprites/spr_acciones_coger/spr_acciones_coger.yy",},},
     {"id":{"name":"spr_acciones_hablar","path":"sprites/spr_acciones_hablar/spr_acciones_hablar.yy",},},
