@@ -15,6 +15,12 @@ try
 		sprite_index = sprite_idle;
 		image_index = 0;
 	}
+    
+    if (interaccion)
+    {
+        interaccion = false;
+        obj_inventario.Deseleccionar_Objeto();
+    }
 }
 catch (_exception)
 {

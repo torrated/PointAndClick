@@ -1,4 +1,4 @@
-/// @description Menú de accionas al pulsar clic derecho
+/// @description Menú de acciones al pulsar clic derecho
 
 try
 {

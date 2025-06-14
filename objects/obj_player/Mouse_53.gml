@@ -7,6 +7,7 @@ try
 		if (estado == ESTADOS_PLAYER.INVENTARIO_ABIERTO) // hay que cerrar el inventario o mirar si hemos clicado en un objeto
 		{
 			estado = ESTADOS_PLAYER.NORMAL;
+            obj_inventario.Seleccionar_Objeto();
 			obj_inventario.Cerrar_Inventario();
 			exit;
 		}
@@ -26,8 +27,8 @@ try
 		
 		if (estado == ESTADOS_PLAYER.NORMAL) // hay que mirar si se ha clicado algo o solo hay que moverse
 		{
-			if (proxima_accion == noone || proxima_accion == ACCIONES_PLAYER.SALIR) // no se ha sacado el UI con botón derecho
-			{
+			if (proxima_accion == noone || proxima_accion == ACCIONES_PLAYER.SALIR || proxima_accion == ACCIONES_PLAYER.USAR_DESDE_INVENTARIO)
+			{// la accion no se ha sacado del UI con botón derecho
 				objeto = instance_position(mouse_x,mouse_y,[obj_interaccionable,obj_salir_zona,obj_inventario,obj_npc]); // ¿obj_texto?
 	            
 				if ((instance_exists(objeto) && objeto.object_index <> obj_inventario)// no se ha clicado en nada: el personaje tiene un destino
@@ -37,10 +38,17 @@ try
 		    			destino = instance_create_layer(mouse_x,y,layer,obj_destino);
 						destino.personaje = id;
 					}
-					
+
 	            if (instance_exists(objeto) && objeto.object_index == obj_salir_zona) // se va a cambiar de zona
-	                proxima_accion = ACCIONES_PLAYER.SALIR; 
-					
+                {
+	                proxima_accion = ACCIONES_PLAYER.SALIR;
+                }
+
+	            if (instance_exists(objeto) && proxima_accion == ACCIONES_PLAYER.USAR_DESDE_INVENTARIO) // se está usando un objeto del inventario
+                {
+	                proxima_accion = ACCIONES_PLAYER.USAR_DESDE_INVENTARIO;
+                }
+
 	            if (instance_exists(objeto) && objeto.object_index == obj_inventario) // se abre el inventario
 				{
 	                estado = ESTADOS_PLAYER.INVENTARIO_ABIERTO;

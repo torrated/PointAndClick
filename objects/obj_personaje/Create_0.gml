@@ -26,6 +26,10 @@ try
     
     sombra = instance_create_layer(x,y,layer,obj_sombra);
     sombra.follow = self;
+    
+    // NPC
+    interaccion = false; // esto es para poder interactuar con los NPC. Cuando true, se activa en Step
+    accion = noone; // la accion recibida por un NPC
 }
 catch (_exception)
 {
